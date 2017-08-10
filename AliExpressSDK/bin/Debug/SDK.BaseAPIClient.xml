@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SDK.BaseAPIClient</name>
+    </assembly>
+    <members>
+        <member name="T:SDK.BaseAPI.Linq.StringExtensions">
+            <summary>
+            异常操作扩展
+            </summary>
+        </member>
+        <member name="P:SDK.BaseAPI.BaseHttpClient.Formatter">
+            <summary>
+            请求客户端
+            </summary>
+        </member>
+        <member name="M:SDK.BaseAPI.BaseHttpClient.Encode(System.Object,System.Nullable{SDK.BaseAPI.MediaType})">
+            <summary>
+            
+            </summary>
+            <param name="o"></param>
+            <param name="mediaType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SDK.BaseAPI.Json">
+            <summary>
+            JsonResult格式化扩展
+            </summary>
+        </member>
+        <member name="M:SDK.BaseAPI.Json.Decode(System.String)">
+            <summary>
+            将 JavaScript 对象表示法 (JSON) 格式的数据转换为数据对象。
+            </summary>
+            <param name="value">要转换的 JSON 编码字符串。</param>
+            <returns>已转换为数据对象的 JSON 编码数据。</returns>
+        </member>
+        <member name="M:SDK.BaseAPI.Json.Decode``1(System.String)">
+            <summary>
+            将 JavaScript 对象表示法 (JSON) 格式的数据转换为指定的强类型数据列表。
+            </summary>
+            <typeparam name="T">要将 JSON 数据转换为的强类型列表的类型。</typeparam>
+            <param name="value">要转换的 JSON 编码字符串。</param>
+            <returns>已转换为强类型列表的 JSON 编码数据。</returns>
+        </member>
+        <member name="M:SDK.BaseAPI.Json.Decode(System.String,System.Type)">
+            <summary>
+            将 JavaScript 对象表示法 (JSON) 格式的数据转换为指定类型的数据对象。
+            </summary>
+            <param name="value">要转换的 JSON 编码字符串。</param>
+            <param name="targetType">应将 value 数据转换为的类型。</param>
+            <returns>已转换为指定类型的 JSON 编码数据。</returns>
+        </member>
+        <member name="M:SDK.BaseAPI.Json.Encode(System.Object)">
+            <summary>
+            将数据对象转换为 JavaScript 对象表示法 (JSON) 格式的字符串。
+            </summary>
+            <param name="value">要转换的数据对象。</param>
+            <returns>返回已转换为 JSON 格式的数据的字符串。</returns>
+        </member>
+        <member name="M:System.Net.Http.HttpResponseMessageExtensions.Serialize(System.Net.Http.Formatting.MediaTypeFormatter,System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="formatter"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.ExceptionExtensions">
+            <summary>
+            异常操作扩展
+            </summary>
+        </member>
+        <member name="M:System.Linq.ExceptionExtensions.DetailMessage(System.Exception)">
+            <summary>
+            显示详细错误性息
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.ExceptionExtensions.FormatMessage(System.Exception,System.Boolean)">
+            <summary>
+            格式化异常消息
+            </summary>
+            <param name="e">异常对象</param>
+            <param name="isHideStackTrace">是否隐藏异常规模信息</param>
+            <returns>格式化后的异常信息字符串</returns>
+        </member>
+    </members>
+</doc>
