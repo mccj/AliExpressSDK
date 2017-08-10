@@ -1,5 +1,6 @@
 # AliExpressSDK
 阿里速卖通开放平台SDK C#版本
+http://open.aliexpress.com/
 
 
 ## 使用例子
