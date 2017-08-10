@@ -4,12 +4,12 @@
 
 ## 使用例子
 ```C#
-           var client = new AliExpressSDK.AliExpressClient("appKey", "appSecret", "accessToken");
+           var client = new SDK.Platform.AliExpressApi.AliExpressClient("appKey", "appSecret", "accessToken");
            var order = client.FindOrderById(11111);
 ```
 ## 扩展重写
 ```C#
-       public class CustomAliExpressClient : AliExpressSDK.AliExpressClient
+       public class CustomAliExpressClient : SDK.Platform.AliExpressApi.AliExpressClient
        {
            public CustomAliExpressClient(string appKey, string appSecret, string accessToken = null, bool _throw = true)
                : base(appKey, appSecret, accessToken, _throw)
@@ -34,11 +34,11 @@
 
                //解析方法2，使用SDK现有的签名及请求，其他自定义
                var dic = new Dictionary<string, object>();
-               dic.Add(AliExpressSDK.AliExpressClient.fieldAccessToken, this.AccessToken);//用户授权令牌
+               dic.Add(SDK.Platform.AliExpressApi.AliExpressClient.fieldAccessToken, this.AccessToken);//用户授权令牌
                dic.Add("orderId", orderId);
                dic.Add("fieldList", null);
                dic.Add("extInfoBitFlag", null);
-               var json2 = this.PostWebRequest(AliExpressSDK.AliExpressClient.openapiIP, this.AppKey, AliExpressSDK.AliExpressClient.Url + "api.findOrderById", isFile: false, stream: null, paramDic: dic, paramIsSign: true, paramIscon: true);
+               var json2 = this.PostWebRequest(SDK.Platform.AliExpressApi.AliExpressClient.openapiIP, this.AppKey, SDK.Platform.AliExpressApi.AliExpressClient.Url + "api.findOrderById", isFile: false, stream: null, paramDic: dic, paramIsSign: true, paramIscon: true);
                var customModel2 = Newtonsoft.Json.JsonConvert.DeserializeObject<ApiFindOrderByIdResponse>(json2);
                return customModel2;
 
