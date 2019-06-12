@@ -1,4 +1,10 @@
 # AliExpressSDK
+---
+           由于速卖通api已经更新至 https://developers.aliexpress.com/doc.htm?docId=107343&docType=1
+           当前sdk已经不适应
+---
+
+
 阿里速卖通开放平台SDK C#版本
 http://open.aliexpress.com/
 
